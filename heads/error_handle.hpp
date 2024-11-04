@@ -3,6 +3,10 @@
 #include <cstdlib> 
 #include <string>
 #include <iostream>
+#include <fstream>
+#include <cassert>
+#include <nlohmann/json.hpp>
+
 namespace handle{
     class Checker{
         public:
@@ -15,7 +19,7 @@ namespace handle{
        Check if json file downloaded correctly
        */
        //for alpha vantage
-        static bool av_json(std::string&, std::string&);
+        static bool av_json(const std::string&);
     };
 }
 

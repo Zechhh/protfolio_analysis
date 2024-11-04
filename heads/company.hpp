@@ -4,7 +4,7 @@
 #include <vector>
 #include <stdexcept>
 #include "interpreter.hpp"
-
+#include "error_handle.hpp"
 class Company{
     public:
         std::string stock_name;
